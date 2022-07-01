@@ -63,9 +63,64 @@ const RightView = styled.div`
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 `
+const RightViewTopBar = styled.div`
+  height: 100px;
+  padding: 30px;
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`
+const RightTopViewButton = styled.button`
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: 600;
+  background-color: #ff0000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`
+const RightFirstSection = styled.div`
+  width: 90%;
+  height: 50%;
+  margin: 20px auto;
+  border: none;
+  border-radius: 20px;
+  background-color: maroon;
+  display: flex;
+`
+const RightFirstLeftSection = styled.div`
+  flex: 5;
+`
+const RightFirstRightSection = styled.div`
+  flex: 2;
+  background-color: orange;
+`
+
+const RightSecondSection = styled.div`
+  width: 90%;
+  height: 30%;
+  margin: 20px auto;
+  border: none;
+  border-radius: 20px;
+  background-color: green;
+  overflow: hidden;
+  display: flex;
+`
+const RightSecondLeftSection = styled.div`
+  flex: 1;
+  background-color: pink;
+`
+const RightSecondRightSection = styled.div`
+  flex: 1;
+`
+
 const MainContainer = () => {
   return (
     <Container>
+
       <Wrapper>
         <LeftView>
           <TopLeftView>
@@ -83,10 +138,38 @@ const MainContainer = () => {
             <KeyboardArrowDownIcon />
           </BottomLeftView>
         </LeftView>
+
+
         <RightView>
-        <h1>Right Stuff</h1>
+        <RightViewTopBar>
+          <h1><span style={{color: "#ff0000"}}>just.</span>bet</h1>
+          <RightTopViewButton>
+          <StyleOutlinedIcon style={{marginRight: "15px"}}/>
+            BUY LOTTERY TICKETS
+          </RightTopViewButton>
+        </RightViewTopBar>
+
+        <RightFirstSection>
+          <RightFirstLeftSection>
+
+          </RightFirstLeftSection>
+          <RightFirstRightSection>
+            
+          </RightFirstRightSection>
+        </RightFirstSection>
+
+
+        <RightSecondSection>
+          <RightSecondLeftSection>
+
+          </RightSecondLeftSection>
+          <RightSecondRightSection>
+
+          </RightSecondRightSection>
+        </RightSecondSection>
         </RightView>
-      </Wrapper>
+        </Wrapper>
+
     </Container>
   )
 }
