@@ -10,6 +10,7 @@ import StarOutlineRoundedIcon from '@mui/icons-material/StarOutlineRounded';
 import LibraryBooksOutlinedIcon from '@mui/icons-material/LibraryBooksOutlined';
 import AccountBalanceWalletOutlinedIcon from '@mui/icons-material/AccountBalanceWalletOutlined';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import NightlightRoundOutlinedIcon from '@mui/icons-material/NightlightRoundOutlined';
 
 
 const Container = styled.div`
@@ -81,6 +82,7 @@ const RightTopViewButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
 `
 const RightFirstSection = styled.div`
   width: 90%;
@@ -88,15 +90,71 @@ const RightFirstSection = styled.div`
   margin: 20px auto;
   border: none;
   border-radius: 20px;
-  background-color: maroon;
+  /* background-color: maroon; */
   display: flex;
+`
+const SectionTopViewOne = styled.div`
+  height: 20%;
+  background-color: #46596a;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6rem;
+  font-weight: 600;
+  border: none;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+`
+const SectionTopViewTwo = styled.div`
+  height: 20%;
+  background-color: #46596a;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6rem;
+  font-weight: 600;
+  border: none;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+`
+const SectionTopViewThree = styled.div`
+  height: 20%;
+  background-color: #46596a;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 0.6rem;
+  font-weight: 600;
+  border: none;
+  border-top-right-radius: 15px;
+`
+const SectionTopViewFour = styled.div`
+  height: 20%;
+  background-color: #46596a;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 0.6rem;
+  font-weight: 600;
+  border: none;
+  border-top-left-radius: 15px;
 `
 const RightFirstLeftSection = styled.div`
   flex: 5;
+  background-color: #203342;
+  margin-right: 20px;
+  border: none;
+  border-radius: 20px;
 `
 const RightFirstRightSection = styled.div`
-  flex: 2;
-  background-color: orange;
+  flex: 3;
+  background-color: #203342;
+  border: none;
+  border-radius: 20px;
 `
 
 const RightSecondSection = styled.div`
@@ -105,16 +163,22 @@ const RightSecondSection = styled.div`
   margin: 20px auto;
   border: none;
   border-radius: 20px;
-  background-color: green;
+  /* background-color: green; */
   overflow: hidden;
   display: flex;
 `
 const RightSecondLeftSection = styled.div`
   flex: 1;
-  background-color: pink;
+  background-color: #203342;
+  margin-right: 20px;
+  border: none;
+  border-radius: 20px;
 `
 const RightSecondRightSection = styled.div`
   flex: 1;
+  background-color: #203342;
+  border: none;
+  border-radius: 20px;
 `
 
 const MainContainer = () => {
@@ -151,20 +215,40 @@ const MainContainer = () => {
 
         <RightFirstSection>
           <RightFirstLeftSection>
-
+          <SectionTopViewOne>
+            <NightlightRoundOutlinedIcon />
+            <h1>Moon game</h1>
+            <KeyboardArrowDownIcon />
+            .
+            ONLINE:880
+            BALANCE: 0.00000012
+            <CircleOutlinedIcon />
+          </SectionTopViewOne>
           </RightFirstLeftSection>
           <RightFirstRightSection>
-            
+          <SectionTopViewTwo>
+            <h1>Profits</h1>
+          </SectionTopViewTwo>
           </RightFirstRightSection>
         </RightFirstSection>
 
 
         <RightSecondSection>
           <RightSecondLeftSection>
-
+          <SectionTopViewThree>
+            Game
+            User
+            Payout
+            Profit
+          </SectionTopViewThree>
           </RightSecondLeftSection>
           <RightSecondRightSection>
-
+          <SectionTopViewFour>
+            N<sup style={{"position": "relative"}}>0</sup>
+            User
+            Payout
+            Profit
+          </SectionTopViewFour>
           </RightSecondRightSection>
         </RightSecondSection>
         </RightView>
